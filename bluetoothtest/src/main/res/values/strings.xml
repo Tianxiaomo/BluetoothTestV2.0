@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">bluetoothTest</string>
+    <!--夹具系统界面使用-->
+    <string name="today_test_num">今日测试数量</string>
+    <string name="success_test_num">成功数量</string>
+    <string name="fail_test_num">失败数量</string>
+    <string name="hint_test">0</string>
+    <string name="singal_quality">信号质量</string>
+    <string name="electric_quantity">电量</string>
+    <string name="open_door_test">开门测试</string>
+    <string name="auto_open_door_test">自动测试</string>
+    <string name="random_test">随机测试</string>
+    <string name="test_login">登录</string>
+    <string name="resume_scan">重新扫描</string>
+    <string name="next_lock">下一把锁</string>
+    <string name="time_open_door">开门时间</string>
+    <string name="hold_on">请稍后继续操作...</string>
+    <string name="base_title">标题</string>
+    <string name="base_cancel">取消</string>
+    <string name="base_confirm">确定</string>
+    <string name="scan_Fail">扫描失败</string>
+    <string name="scan_Stop">扫描停止</string>
+    <string name="connecting">连接中.....</string>
+    <string name="connect_stop">停止连接</string>
+    <string name="click_conn_multimeter">点击了连接万用表</string>
+    <string name="click_rescan">点击了重新扫描</string>
+    <string name="click_open_lock">点击了连接开锁</string>
+    <string name="select_lock">请先选择锁</string>
+    <string name="testing">测试中.....</string>
+</resources>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_simple_devices_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_simple_devices_name"
+                        style="@style/text_mac_style"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_simple_devices_mac_address"
+                        style="@style/text_mac_style"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_simple_devices_time_open_lock"
+                        style="@style/text_mac_style"
+                        android:layout_width="match_parent"
+                        android:hint="开门时间"/>
+
+                    <TextView
+                        android:id="@+id/tv_simple_devices_status"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_simple_devices_real_electric"
+                    style="@style/text_ele_rssi_style"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="N/A" />
+
+                <TextView
+                    android:id="@+id/tv_simple_devices_electric_qauntity"
+                    style="@style/text_ele_rssi_style"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="N/A" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_simple_devices_signal_strength"
+                    style="@style/text_ele_rssi_style"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:hint="N/A"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_simple_devices_result_open_lock"
+                    style="@style/text_ele_rssi_style"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:hint="N/A"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOpen"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/multiple_image_select_primaryDark"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="一键开门"
+                android:textColor="@color/font_white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvOpenNearBy"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/multiple_image_select_primaryDark"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="靠近开门"
+                android:textColor="@color/font_white"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <!--
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:paddingLeft="@dimen/padding_all_left_right"
+                       android:paddingRight="@dimen/padding_all_left_right">
+
+                       <TextView
+                           android:id="@+id/tv_simple_devices_name"
+                           style="@style/text_normal_style"
+                           android:layout_width="0dp"
+                           android:layout_weight="1"/>
+
+                       <TextView
+                           android:id="@+id/tv_simple_devices_mac_address"
+                           style="@style/text_normal_style"
+                           android:layout_width="0dp"
+                           android:layout_weight="1"/>
+
+                       <TextView
+                           android:id="@+id/tv_simple_devices_status"
+                           style="@style/text_normal_style"
+                           android:layout_width="0dp"
+                           android:layout_weight="0"
+                           android:paddingTop="0dp"
+                           />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           style="@style/text_normal_style"
+                           android:layout_width="0dp"
+                           android:layout_weight="0.5"
+                           android:gravity="right"
+                           android:hint="电量:" />
+
+                       <TextView
+                           android:id="@+id/tv_simple_devices_electric_qauntity"
+                           style="@style/text_normal_style"
+                           android:layout_width="0dp"
+                           android:layout_weight="0.5"
+                           android:layout_marginLeft="5dp"
+                           android:hint="0" />
+
+                       <TextView
+                           style="@style/text_normal_style"
+                           android:layout_width="0dp"
+                           android:layout_weight="0.5"
+                           android:gravity="right"
+                           android:hint="信号:"/>
+                       <TextView
+                           android:id="@+id/tv_simple_devices_signal_strength"
+                           style="@style/text_normal_style"
+                           android:layout_width="0dp"
+                           android:layout_marginLeft="5dp"
+                           android:layout_weight="0.5"
+                           android:hint="0"/>
+
+                       <TextView
+                           android:id="@+id/tv_simple_devices_time_open_lock"
+                           style="@style/text_normal_style"
+                           android:layout_width="0dp"
+                           android:layout_weight="1.5"
+                           android:hint="开门时间"/>
+
+                       <TextView
+                           android:id="@+id/tv_simple_devices_result_open_lock"
+                           style="@style/text_normal_style"
+                           android:layout_width="0dp"
+                           android:layout_weight="0.5"
+                           android:hint="结果"/>
+
+                   </LinearLayout>
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:id="@+id/tvOpen"
+                       android:layout_width="100dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginBottom="5dp"
+                       android:layout_marginTop="3dp"
+                       android:background="@color/multiple_image_select_primaryDark"
+                       android:gravity="center"
+                       android:padding="10dp"
+                       android:text="一键开门"
+                       android:textColor="@color/font_white"
+                       android:textSize="13sp" />
+
+                   <TextView
+                       android:id="@+id/tvOpenNearBy"
+                       android:layout_width="100dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginBottom="5dp"
+                       android:layout_marginTop="3dp"
+                       android:background="@color/multiple_image_select_primaryDark"
+                       android:gravity="center"
+                       android:padding="10dp"
+                       android:text="靠近开门"
+                       android:textColor="@color/font_white"
+                       android:textSize="13sp" />
+
+               </LinearLayout>
+
+       -->
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/font_gray2"
+        />
+</LinearLayout>

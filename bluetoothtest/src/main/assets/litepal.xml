@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Lock" />
+    <version value="2" />
+
+    <list>
+        <mapping class="com.qk365.bluetoothtest.Lock"></mapping>
+        <mapping class="com.qk365.bluetoothtest.litepal.LockNum"></mapping>
+    </list>
+
+</litepal>

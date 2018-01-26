@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 间距 -->
+    <dimen name="padding_all_left_right">16dp</dimen>
+    <dimen name="margin_all_left_right">16dp</dimen>
+    <dimen name="padding_all_top_bottom">16dp</dimen>
+    <dimen name="margin_all_top_bottom">16dp</dimen>
+    <dimen name="divider_line_1px">1dp</dimen>
+
+
+    <dimen name="font_big_more">20sp</dimen>
+    <dimen name="font_big">17sp</dimen>
+    <dimen name="font_middle">15sp</dimen>
+    <dimen name="font_small">13sp</dimen>
+    <dimen name="font_small_more">11sp</dimen>
+
+    <dimen name="font_openlock">20sp</dimen>
+
+    <dimen name="font_num">30sp</dimen>
+</resources>

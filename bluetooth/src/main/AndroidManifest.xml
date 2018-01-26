@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.qk365.bluetooth">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="no.nordicsemi.android.LOG" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" ></uses-permission>
+
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--由于安卓4.x以上的版本使用蓝牙，需要开启定位权限才能搜索到附近的蓝牙设备-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+    <!-- 低功耗蓝牙Android 4.3 (API level 18) or higher. -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+
+        <activity android:name="com.qk365.bluetooth.NotificationActivity" />
+
+
+        <service
+            android:name="com.inuker.bluetooth.library.BluetoothService" />
+        <service
+            android:name="com.qk365.bluetooth.service.DfuBleService"
+            android:exported="false"
+            >
+            <intent-filter>
+                <action android:name="no.qk365.android.action.DFU_UPLOAD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
